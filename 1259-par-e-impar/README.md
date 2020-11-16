@@ -68,8 +68,4 @@ Apresente todos os valores lidos na entrada segundo a ordem apresentada acima. C
 
   
 
-Para a solução foi utilizado a estrutura de dados **ArrayList** juntamento com os métodos **Collections.sort()** e **Collections.reverse()** do JavaScript que possuem como complexidade `O(n)`.
-
-  
-
-Portanto, o pior cenário do algoritmo utilizado na solução é `O(n)`.
+Para a solução foi utilizado a estrutura de dados **ArrayList** juntamento com os métodos **Collections.sort()** e **Collections.reverse()** do Java que possuem como complexidade `O(n)`.
