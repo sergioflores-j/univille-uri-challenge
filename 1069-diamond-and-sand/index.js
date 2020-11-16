@@ -19,6 +19,10 @@
  * 
  */
 
+// Específico para submissão no URI:
+// var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+// var lines = input.split('\n');
+
 const input = require('fs').readFileSync('./input.txt', 'utf8');
 const lines = input.split('\r\n');
 const numTests = lines[0];
