@@ -7,37 +7,42 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
- 
-    public static void main(String[] args) throws IOException {
- 
-        Scanner sc = new Scanner(System.in);
-		
-		List<Integer> lista = new ArrayList<>();
-		List<Integer> par 	= new ArrayList<>();
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc = new Scanner(System.in);
+
+		List<Integer> valores = new ArrayList<>();
+		List<Integer> par = new ArrayList<>();
 		List<Integer> impar = new ArrayList<>();
+
+		int quantidadeLinhas = sc.nextInt();
 		
-		int n = sc.nextInt();
-		for (int i=0 ; i<n ; i++)
-			lista.add(sc.nextInt());
-				
-		for (Integer x: lista){
-			if (x%2==0)
-				par.add(x);
+		for (int i = 0; i < quantidadeLinhas; i++)
+			valores.add(sc.nextInt());
+
+		for (Integer valor : valores) {
+			if (isPar(valor))
+				par.add(valor);
 			else
-				impar.add(x);
+				impar.add(valor);
 		}
-		
+
 		Collections.sort(par);
 		Collections.sort(impar);
 		Collections.reverse(impar);
-		
-		for (Integer y: par)
+
+		for (Integer y : par)
 			System.out.println(y);
-		for (Integer z: impar)
-			System.out.println(z);
 		
+		for (Integer z : impar)
+			System.out.println(z);
+
 		sc.close();
- 
-    }
- 
+	}
+	
+	public static boolean isPar(Integer valor) {
+		return valor % 2 == 0;
+	}
+
 }
